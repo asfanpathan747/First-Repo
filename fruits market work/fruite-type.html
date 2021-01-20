@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>alert(window.FontAwesome.config)</script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>  
+    <title>Document</title>
+    <style>
+        body{
+            background:linear-gradient(to left,#009fff,#ec2f4b);
+            width:100%;
+            height:auto;
+            border-radius: 30%;
+        }
+        /* scrollbar code start here */
+        body::-webkit-scrollbar{
+            width: 25px;
+        }
+        body::-webkit-scrollbar-track{
+            width: 25px;
+            background:linear-gradient(black,#009fff,#ec2f4b);
+            border-radius:20px;
+            border:2px solid black;
+            box-shadow:inset 3px 3px 4px white,3px 3px 4px black;
+        }
+        body::-webkit-scrollbar-thumb{
+            width:25px;
+            height: 40px;
+            background:linear-gradient(violet,orange);
+            border:1px solid black;
+            box-shadow:inset 3px 3px 4px white,3px 3px 4px black,inset 2px 2px 3px black;
+
+            border-radius:20px;
+        }
+        /* scrollbar code end here */
+
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows:repeat(3,1fr);
+            grid-gap: 15px 15px;
+            width: 100%;
+            height:100%;
+        }
+        .child-first{
+           grid-column: 2/3;            
+        
+        }
+        .child-second{
+            grid-column: 3/4;            
+
+        }
+
+        /* images code start here */
+        .first-image{
+            width: 272px;
+            border:2px solid black;
+            transition: all 0.7s linear;
+            
+        }
+        .first-image:hover{
+            transform: translateX(-70px) scale(0.8);
+            border-radius: 30px;
+            box-shadow: 2px 2px 4px black;
+        }
+        .sec-image{
+            width: 272px;
+            height:190px;
+            object-fit: cover;
+            border:2px solid black;
+            margin-top:7px;
+            transition: all 0.7s linear;
+
+        }
+        .sec-image:hover{
+            transform: translateX(-70px) scale(0.8);
+            border-radius: 30px;
+            box-shadow: 2px 2px 4px black;
+        }
+        .third-image{
+            border:2px solid black;
+            margin-top:7px;
+            transition: all 0.7s linear;
+
+        }
+        .third-image:hover{
+            transform: translateX(-70px) scale(0.8);
+            border-radius: 30px;
+            box-shadow: 2px 2px 4px black;
+        }
+        .baigen{
+            width: 272px;
+            height: 210px;
+            border:2px solid black;
+            object-fit: cover;
+            transition: all 0.7s linear;
+
+       }
+       .baigen:hover{
+        transform: translateX(70px) scale(0.8);
+            border-radius: 30px;
+            box-shadow: 2px 2px 4px black;
+       }
+       .all-vegs{
+            width: 272px;
+            height: 210px;
+            border:2px solid black;
+            object-fit: cover;
+            margin-top: 7px;
+            transition: all 0.7s linear;
+       }
+       .all-vegs:hover{
+        transform: translateX(70px) scale(0.8);
+            border-radius: 30px;
+            box-shadow: 2px 2px 4px black;
+       }
+       .vegetables{
+        width: 272px;
+            height: 180px;
+            border:2px solid black;
+            object-fit: cover;
+            margin-top: 7px;
+            transition: all 0.7s linear;
+       }
+       .vegetables:hover{
+        transform: translateX(70px) scale(0.8);
+            border-radius: 30px;
+            box-shadow: 2px 2px 4px black;
+       }
+       /* images code end here */
+
+
+
+
+
+
+        nav{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            margin-top:30px;
+            
+        }
+    button{
+        background-color: aqua;
+        width:230px;
+        height:60px;  
+          
+    }
+    
+    button:hover{
+          /* text-shadow:3px 3px 4px black; */
+          box-shadow:4px 4px 6px black,inset 4px 4px 6px black;
+          background-color:white;
+    }
+    button a{
+        color:black;
+        text-decoration:none;
+        font-size:20px;
+        cursor: progress;
+        
+    }
+     button a:hover{
+        text-decoration: none;
+    } 
+    h2{
+        text-align: center;
+        color:orangered;
+    }
+    span{
+        color:yellowgreen;
+    }
+    
+    </style>
+</head>
+<body>
+    <h2><span>select your</span> fav <span>section</span></h2>
+    <div class="container">
+     <div class="back-option">
+
+    </div>
+
+        <!-- first img code start here -->
+        <div class="child-first">
+            <img src="./src/dry fruits.jpg" alt="" class="first-image"><br>
+            <img src="./src/kaju.jpg" class="sec-image"><br>
+            <img src="./src/kismis.jpg" class="third-image">
+            <img src="./src" alt="">
+        </div>
+             
+
+        <!-- second img code start here -->
+        <div class="child-second">
+        <nav>
+            <button class="btn btn-primary"><a href="">WEGETABLES SECTION</a></button><br>
+            <button  class="btn btn-primary"><a href="">DRYFRUITS SECTION</a></button><br>
+            <button  class="btn btn-primary"><a href="">VITAMIN FRUITS</a></button><br>
+            <button  class="btn btn-primary"><a href="">VITAMIN (A)</a></button><br>
+            <button  class="btn btn-primary"> <a href="">VITAMIN (B)</a></button><br>
+            <button  class="btn btn-primary"> <a href="">VITAMIN (C)</a></button><br>
+            <button  class="btn btn-primary"> <a href="">VITAMIN (D)</a></button><br>
+        </nav>
+       </div>
+       <div class="child-third">
+           <img src="./src/baigen.jpg" alt="" class="baigen" onmouseover="alert('this vegetables section')">
+           <img src="./src/all-vegs.jpg" alt="" class="all-vegs">
+           <img src="./src/vegitables.jpg" class="vegetables">
+
+       </div>
+ 
+</div>
+
+
+</body>
+</html>

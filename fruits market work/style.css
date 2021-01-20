@@ -1,0 +1,1079 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    /* width:100%;
+    height:auto; */
+}
+:root{
+    --main-color:rgb(188, 241, 237);
+}
+
+body{
+    background:linear-gradient(to left,#009fff,#ec2f4b);
+    /* background-image:url(./src/backtree.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    /* background-size: cover;
+    background-attachment: fixed;
+    height:100vh; */
+}
+body::-webkit-scrollbar{
+    width:25px;
+    
+    
+}
+body::-webkit-scrollbar-track{
+    color:greenyellow;
+    background:linear-gradient(red,blue,pink);
+    border-radius: 20px;
+    box-shadow:inset 3px 3px 4px white,2px 2px 3px white;
+}
+body::-webkit-scrollbar-thumb{
+    background:linear-gradient(#009fff,#ec2f4b);
+    border-radius: 20px;
+    /* box-shadow: 2px 2px 3px white; */
+    box-shadow:inset 3px 3px 4px white,2px 2px 3px white;
+}
+body::-webkit-scrollbar-corner{
+    background:linear-gradient(#009fff,#ec2f4b);
+}
+
+
+
+.logo{
+    width:150px;
+    height:150px;
+    float: left; 
+    margin:0px 0px;
+    clip-path: circle(50% at 50% 50%);
+    
+    
+}
+h2{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:37px;
+    color:yellowgreen;
+   
+}
+span{
+    color:orangered;
+    background-color:transparent;
+}
+
+nav{
+   opacity: 1;
+   text-align:right;
+   margin-top:30px;
+   position: static;
+   top:0;
+}
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    border:3px solid black;
+    text-shadow: 3px 3px 4px black;
+    border-radius: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+     font-size:18px; 
+    padding:13px; 
+    
+       
+}
+nav a:hover{
+    background-color:black;
+    color:white;
+    box-shadow: 3px 3px 9px black;
+    text-shadow: 4px 4px 6px white;
+    border:2px solid dashed red;
+    opacity: 0.5;    
+
+}
+
+/* icons css start here */
+i{
+    color:white;
+    transition: all 2s linear;
+}
+ i:hover{
+    border:1px solid white;
+    color:black;
+    transform: rotate(360deg);
+    border-radius:20px;
+    background: linear-gradient(white,yellow,silver);
+} 
+/* icons css end here */
+
+h1{
+    
+    margin-top:70px;
+    color:whitesmoke;
+    text-transform: uppercase;
+    border:1px solid black;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 5px;
+    width:500px;
+    text-align:center;
+    margin-left:570px;
+}
+
+/* search option css start here */
+.seacrh-option{
+    margin-left:570px;
+    margin-top:40px;
+    
+}
+input[placeholder=search]{
+    text-align: center;
+    font-size: large;
+    width:340px;
+    height:40px;
+    border-radius:10px;
+    outline:none;
+    margin:9px;
+}
+input[placeholder=search]:focus{
+    background-color: black;
+    color:white;
+    font-style: italic;
+}
+
+/* search option css end here */
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap:18px;
+    margin-top:30px;
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    margin-left:20px;
+    margin-right: 20px;
+    width:calc(100% - 20px - 20px);
+}
+ 
+/* card1 css start here */
+.card-child1{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+
+}
+.card-child1 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px;
+    
+        
+}
+.card-child1 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+}
+.card-child1:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;  
+     
+}
+/* card1 css end here */
+
+/* card2 css start here */
+.card-child2{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+}
+.card-child2 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px; 
+    object-fit:contain;      
+}
+.card-child2 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+}
+.card-child2:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;
+    
+}
+/* card2 css end here */
+
+/* card3 css start here */
+.card-child3{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+}
+.card-child3 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px;
+    object-fit: cover;
+    
+        
+}
+.card-child3 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+}
+.card-child3:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;
+    
+}
+/* card3 css end here */
+
+/* card4 css start here */
+.card-child4{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child4 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px;
+    object-fit: cover;
+    width: calc(250px-10px-4px-10px-30px-7px);
+    
+        
+}
+.card-child4 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;   
+}
+.card-child4:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card4 css end here */
+
+/* card5 css start here */
+.card-child5{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child5 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px;
+    object-fit: cover;
+        
+}
+.card-child5 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;    
+}
+.card-child5:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card5 css end here */
+
+/* card6 css start here */
+.card-child6{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child6 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px;
+    object-fit: cover;    
+        
+}
+.card-child6 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;    
+}
+.card-child6:hover{
+    background-color: var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card6 css end here */
+
+/* card7 css start here */
+.card-child7{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child7 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px;
+    object-fit:cover; 
+        
+}
+.card-child7 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+    
+}
+.card-child7:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;
+    
+}
+/* card7 css end here */
+
+/* card8 css start here */
+.card-child8{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child8 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px; 
+    object-fit:cover;   
+        
+}
+.card-child8 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;   
+}
+.card-child8:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;
+    
+}
+/* card8 css end here */
+
+/* card9 css start here */
+.card-child9{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child9 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px; 
+    object-fit:cover;   
+        
+}
+.card-child9 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+    
+}
+.card-child9:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card9 css end here */
+
+/* card10 css start here */
+.card-child10{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child10 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px; 
+    object-fit:cover;   
+        
+}
+.card-child10 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+    
+}
+.card-child10:hover{
+    background-color: var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card10 css end here */
+
+/* card11 css start here */
+.card-child11{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child11 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px; 
+    object-fit:cover;   
+        
+}
+.card-child11 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color: yellow;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+    
+}
+.card-child11:hover{
+    background-color:var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card11 css end here */
+
+/* card12 css start here */
+.card-child12{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    
+}
+.card-child12 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px; 
+    object-fit:cover;   
+        
+}
+.card-child12 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color:gold;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+    
+}
+.card-child12:hover{
+    background-color: var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card12 css end here */
+
+/* card13 css start here */
+.card-child13{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    grid-column: 2/3;
+    
+}
+.card-child13 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px; 
+    object-fit:cover;   
+        
+}
+.card-child13 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color:gold;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+    
+}
+.card-child13:hover{
+    background-color: var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card13 css end here */
+
+
+/* card14 css start here */
+.card-child14{
+    border:3px solid black;
+    border-radius:20px;
+    /* margin-left:10px; */
+    padding:30px;
+    height: 450px;
+    grid-column: 3/4;
+    
+}
+.card-child14 img{
+    width: 250px;
+    height: 200px; 
+    border:2px solid black;
+    padding:7px; 
+    object-fit:cover;   
+        
+}
+.card-child14 figcaption{
+      text-align: center;
+      font-size: 30px;
+      color:red;
+      background-color:white;
+      opacity: 0.7;
+      border-radius:10px;
+      text-shadow:1px 1px 0px white;
+}
+input[type="number"]{
+    margin:4px;
+}
+h3{
+    text-align: center;
+    margin-top:10px;
+    text-shadow: 2px 2px 3px black;
+}
+button{
+    text-align: center;
+    width:80px;
+    height:45px;
+    background-color:gold;
+    border-radius:20px;
+    font-size:13px;
+    outline:none;
+    margin-left:70px;
+    margin-top:7px;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:23px;
+    margin-top:5px;
+    text-shadow:2px 2px 3px black;
+    
+}
+.card-child14:hover{
+    background-color: var(--main-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px black;    
+}
+/* card14 css end here */
+
+.card-child15{
+    background-color: gray;
+    border:2px solid black;
+    box-shadow: 0px 0px 4px black, 2px 2px 4px black;
+    border-radius:30px;
+    grid-column: 1/5;
+    height:300px;
+    width:100%;
+    margin:0px 0px;
+    background-image: url(./src/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-column-gap: 1fr;
+}
+.nested1{
+    margin-left:2rem;
+}
+.footer-img{
+    width:200px;
+    height:100px;
+    border-radius: 25px;
+}
+address{
+    font-size: 34px;
+    width:340px;
+    text-shadow: 3px 3px 4px black;
+    padding:10px;
+}
+.visit{
+    width:200px;
+    height:40px;
+    background:linear-gradient(to right,navy,orange);
+    box-shadow: 4px 4px 6px black,4px 4px 6px black,inset 1px 1px 2px white;
+    opacity: 0.8;
+    margin-left:0px;
+    transition: all 0.7s ease-in;
+    cursor: pointer;
+}
+.visit:hover{
+    transform: scale(0.8);
+}
+.visit a{
+    text-decoration: none;
+    font-size: 23px;
+    color:black;
+}
+.nested2{
+    margin-left: 60px;
+}
+
+.nested3{
+    height:auto;
+    margin-top:10px;
+    perspective: 500px;
+    
+}
+ .profile{
+    height:180px;
+    width:180px;
+    clip-path: circle(50% at 50% 50%);
+    margin-left:8rem;
+    box-shadow: 3px 3px 4px black;  
+    transition: all 1.2s linear;
+}
+.profile:hover{
+        transform:rotateY(360deg) scale(0.7);
+        opacity: 0.5;
+      
+}
+
+.nested3 h5{
+    text-align: center;
+    font-size:23px;
+}

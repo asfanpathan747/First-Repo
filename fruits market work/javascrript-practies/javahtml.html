@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+    
+</head>
+<body>
+   <script>
+
+    //prompt box percentage code start here
+  var per = prompt("enter your percentage :");
+
+  if(per >= 80 && per <= 100){
+      document.write("you are merit.");
+
+  }else if(per >= 60 && per < 80){
+      document.write("you are first division");
+
+  }else if(per >= 45 && per < 60){
+      document.write("you are second division");
+
+  }else if(per >= 33 && per < 45){
+      document.write("you are third division");
+
+  }else if(per > 33){
+      document.write("you are fail");
+
+  }else{
+      document.write("enter your percentage")
+  }
+  document.write("<br>");
+
+  //prompt box percentage code end here
+
+  //prompt name box code start here
+
+  var b=prompt("enter your name");
+  document.write(b);
+
+  //prompt name box code end here
+
+  //function code start here
+var s1=10;
+var s2=20;
+
+  function sum(s1,s2){
+      document.write(s1+s2);    
+  }
+  sum();
+
+  sum(30,10);
+  sum(40,50);
+
+
+  //function code end here
+
+     
+       
+   </script> 
+</body>
+</html>
